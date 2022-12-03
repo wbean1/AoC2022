@@ -80,15 +80,13 @@ mod tests {
 
     #[test]
     fn test_part_one() {
-        let expected: Option<u32> = Some(15);
         let input = advent_of_code::read_file("examples", 2);
-        assert_eq!(part_one(&input), expected);
+        assert_eq!(part_one(&input), Some(15));
     }
 
     #[test]
     fn test_part_two() {
-        let expected: Option<u32> = Some(12);
         let input = advent_of_code::read_file("examples", 2);
-        assert_eq!(part_two(&input), expected);
+        assert_eq!(part_two(&input), Some(12));
     }
 }
