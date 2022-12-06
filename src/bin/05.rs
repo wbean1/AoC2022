@@ -2,11 +2,7 @@ use regex::Regex;
 
 pub fn part_one(input: &str) -> Option<String> {
     // for the test to pass...
-    let mut stacks: Vec<Vec<&str>> = vec![
-        vec!["Z", "N"],
-        vec!["M", "C", "D"],
-        vec!["P"],
-    ];
+    let mut stacks: Vec<Vec<&str>> = vec![vec!["Z", "N"], vec!["M", "C", "D"], vec!["P"]];
 
     // for the actual run...
     // let mut stacks: Vec<Vec<&str>> = vec![
@@ -33,11 +29,7 @@ pub fn part_one(input: &str) -> Option<String> {
 
 pub fn part_two(input: &str) -> Option<String> {
     // for the test to pass...
-    let mut stacks: Vec<Vec<&str>> = vec![
-        vec!["Z", "N"],
-        vec!["M", "C", "D"],
-        vec!["P"],
-    ];
+    let mut stacks: Vec<Vec<&str>> = vec![vec!["Z", "N"], vec!["M", "C", "D"], vec!["P"]];
 
     // for the actual run...
     // let mut stacks: Vec<Vec<&str>> = vec![
@@ -96,16 +88,12 @@ mod tests {
     #[test]
     fn test_parse_line() {
         let input = "move 1 from 2 to 33";
-        assert_eq!(parse_line(input), (1,2,33))
+        assert_eq!(parse_line(input), (1, 2, 33))
     }
 
     #[test]
     fn test_top_of_stacks() {
-        let stacks: Vec<Vec<&str>> = vec![
-            vec!["Z", "N"],
-            vec!["M", "C", "D"],
-            vec!["P"],
-        ];
+        let stacks: Vec<Vec<&str>> = vec![vec!["Z", "N"], vec!["M", "C", "D"], vec!["P"]];
         assert_eq!(top_of_stacks(stacks), "NDP".to_string())
     }
 
