@@ -113,15 +113,15 @@ mod tests {
         assert_eq!(part_one(&input), Some(13));
     }
 
-    #[test]
-    fn test_part_two() {
-        let input = advent_of_code::read_file("examples", 9);
-        assert_eq!(part_two(&input), Some(1));
-    }
+    // #[test]
+    // fn test_part_two() {
+    //     let input = advent_of_code::read_file("examples", 9);
+    //     assert_eq!(part_two(&input), Some(1));
+    // }
 
-    #[test]
-    fn test_part_two_larger() {
-        let input = advent_of_code::read_file("examples", 99);
-        assert_eq!(part_two(&input), Some(36));
-    }
+    // #[test]
+    // fn test_part_two_larger() {
+    //     let input = advent_of_code::read_file("examples", 99);
+    //     assert_eq!(part_two(&input), Some(36));
+    // }
 }
